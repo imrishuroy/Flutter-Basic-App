@@ -18,39 +18,37 @@ class _MyAppState extends State<MyApp> {
       'answer': [
         {'text': 'Black', 'score': 3},
         {'text': 'Red', 'score': 5},
-        {'text':'Green','score':3},
-        {'text':'White', 'score':1}
+        {'text': 'Green', 'score': 3},
+        {'text': 'White', 'score': 1}
       ]
     },
     {
       'questionText': 'Who is favourite friend?',
       'answer': [
-        {'text':'Shubam', 'score':1}, 
-        {'text':'Aman', 'score':1}, 
-        {'text':'Satyam', 'score': 1}, 
-        {'text':'Yogi', 'score':1}
-        ]
+        {'text': 'Shubam', 'score': 1},
+        {'text': 'Aman', 'score': 1},
+        {'text': 'Satyam', 'score': 1},
+        {'text': 'Yogi', 'score': 1}
+      ]
     },
-    
     {
       'questionText': 'What\'s your favourite animals',
       'answer': [
-        {'text':'Rabbit', 'score':3}, 
-        {'text':'Snake', 'score':8}, 
-        {'text':'Elephant', 'score': 5}, 
-        {'text':'Lion', 'score':9}
-        ]
+        {'text': 'Rabbit', 'score': 3},
+        {'text': 'Snake', 'score': 8},
+        {'text': 'Elephant', 'score': 5},
+        {'text': 'Lion', 'score': 9}
+      ]
     },
   ];
   var _questionIndex = 0;
   int _totalScore = 0;
 
-  void resetQuiz(){
+  void resetQuiz() {
     setState(() {
-       _questionIndex = 0;
-    _totalScore = 0;
+      _questionIndex = 0;
+      _totalScore = 0;
     });
-   
   }
 
   void _answerQuestion(int score) {
